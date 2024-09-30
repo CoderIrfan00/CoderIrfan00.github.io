@@ -9,7 +9,6 @@
     <meta name="author" content="Mohd Irfan">
     <title>Mohd Irfan - Full Stack Developer</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
@@ -17,27 +16,35 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            color: #333;
         }
+
         header {
             background-color: #333;
             padding: 20px;
         }
+
         nav ul {
             list-style: none;
             display: flex;
             justify-content: flex-end;
         }
+
         nav ul li {
             margin-left: 20px;
         }
+
         nav ul li a {
             color: #fff;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s ease;
         }
+
         nav ul li a:hover {
-            text-decoration: underline;
+            color: #28a745;
         }
+
         #hero {
             background: url('/images/hero-bg.jpg') no-repeat center center/cover;
             height: 100vh;
@@ -45,69 +52,149 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            color: white;
         }
+
         #hero h1 {
-            color: #fff;
-            font-size: 3rem;
-            margin-bottom: 10px;
+            font-size: 4rem;
+            font-weight: 700;
         }
+
         #hero p {
-            color: #fff;
             font-size: 1.5rem;
+            margin-bottom: 20px;
         }
+
         .cta-button {
             background-color: #28a745;
             color: #fff;
-            padding: 10px 20px;
+            padding: 15px 30px;
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
+            transition: background-color 0.3s ease;
         }
+
         .cta-button:hover {
             background-color: #218838;
         }
+
         .container {
             width: 80%;
             margin: 0 auto;
         }
+
         section {
             padding: 60px 0;
         }
-        #about h2, #skills h2, #projects h2, #contact h2 {
+
+        h2 {
             font-size: 2.5rem;
             margin-bottom: 20px;
             text-align: center;
+            color: #333;
         }
-        .skills-list, .project-slider {
+
+        #about p {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+        }
+
+        .skills-list {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
-        .skills-list li, .project {
-            background: #f9f9f9;
+
+        .skills-list li {
+            background-color: #f9f9f9;
             padding: 20px;
             margin: 10px;
             border-radius: 10px;
             flex: 1;
-            max-width: 45%;
+            max-width: 30%;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
+
+        .skills-list li i {
+            margin-right: 10px;
+        }
+
+        .project-slider {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .project {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            max-width: 45%;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
         .project-image img {
             max-width: 100%;
             border-radius: 10px;
         }
+
         footer {
             background-color: #333;
             padding: 20px 0;
             color: #fff;
             text-align: center;
         }
+
         .social-media-icons a {
             color: #fff;
             margin: 0 10px;
             font-size: 1.5rem;
+            transition: color 0.3s ease;
         }
+
         .social-media-icons a:hover {
             color: #28a745;
+        }
+
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact-form input, 
+        #contact-form textarea {
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        #contact-form button {
+            background-color: #28a745;
+            color: #fff;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #contact-form button:hover {
+            background-color: #218838;
         }
     </style>
 </head>
@@ -138,7 +225,7 @@
         <section id="about">
             <div class="container">
                 <h2>About Me</h2>
-                <p>I am a dedicated and highly motivated Full Stack Developer with over 5 years of experience in designing, developing, and implementing web applications. I am skilled in front-end and back-end technologies, ensuring the development of user-centric and highly responsive web platforms. My expertise spans various frameworks and programming languages, and I have a proven track record of delivering projects that meet business objectives and user needs.</p>
+                <p>I am a dedicated Full Stack Developer with over 5 years of experience in designing, developing, and implementing web applications. Skilled in both front-end and back-end technologies, I ensure user-centric, highly responsive web platforms that deliver business objectives.</p>
             </div>
         </section>
 
@@ -147,7 +234,7 @@
             <div class="container">
                 <h2>Core Competencies</h2>
                 <ul class="skills-list">
-                    <li><i class="fas fa-laptop-code"></i> Front-End: HTML5, CSS3, JavaScript, React, NextJs</li>
+                    <li><i class="fas fa-laptop-code"></i> Front-End: HTML5, CSS3, JavaScript, React, Next.js</li>
                     <li><i class="fas fa-server"></i> Back-End: Node.js, Express, REST APIs</li>
                     <li><i class="fas fa-database"></i> Databases: MongoDB, MySQL</li>
                 </ul>
@@ -160,20 +247,22 @@
                 <h2>Featured Projects</h2>
                 <div class="project-slider">
                     <div class="project">
-                        <h3>Project A - SaaS Platform</h3>
+                        <h3>CertiResumeGenerator</h3>
                         <div class="project-image">
                             <img src="images/project-a.jpg" alt="Project A">
                         </div>
-                        <p>Developed a full-featured SaaS platform for managing customer relations with advanced analytics and real-time data visualization tools.</p>
-                        <a href="#" class="project-button">Learn More</a>
+                        <p>I developed a certificate management website using the MERN stack that allows users to upload and manage their certificates. The platform supports both PDF and image uploads and uses Optical Character Recognition (OCR) to extract text from uploaded certificates for easy access and resume creation. The site features user authentication, a secure file upload system, and a dashboard where users can view, organize, and download their certificates. It includes error handling, PDF-to-image conversion, and responsive design for a seamless user experience.</p>
+                      
                     </div>
                     <div class="project">
-                        <h3>Project B - E-Commerce Solution</h3>
+                        <h3>JavaCoder - Professional Educational Platform</h3>
                         <div class="project-image">
                             <img src="images/project-b.jpg" alt="Project B">
                         </div>
-                        <p>Created a scalable and high-performing e-commerce platform that supports secure payment gateways and seamless user experience.</p>
-                        <a href="#" class="project-button">Learn More</a>
+                        <p>JavaCoder is a comprehensive educational platform built using Next.js, designed to provide high-quality courses for both school-level students (grades 8-12) and undergraduate students. For school students, JavaCoder offers in-depth lessons in core subjects such as Mathematics, English, Science, and Social Science. For undergraduate students, the platform delivers cutting-edge technical courses, including HTML, CSS, JavaScript, React.js, and Next.js, with a focus on project-based learning.
+
+The platform is designed with a clean and modern interface, providing features like personalized dashboards, dynamic course pages, and interactive learning paths. With future updates planned for expanding its offerings, JavaCoder aims to be a go-to destination for students looking to enhance their academic and technical skills.</p>
+                      
                     </div>
                 </div>
             </div>
@@ -183,7 +272,7 @@
         <section id="contact">
             <div class="container">
                 <h2>Get in Touch</h2>
-                <p>I am always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out using the contact form below or via email.</p>
+                <p>I am always open to discussing new projects or opportunities. Reach out using the form below or via email.</p>
                 <form id="contact-form">
                     <input type="text" id="name" placeholder="Your Name" required>
                     <input type="email" id="email" placeholder="Your Email" required>
