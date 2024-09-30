@@ -4,292 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Mohd Irfan, a Full Stack Developer specializing in building scalable web applications.">
-    <meta name="keywords" content="Full Stack Developer, Web Development, JavaScript, Node.js, React, MongoDB, Express">
-    <meta name="author" content="Mohd Irfan">
-    <title>Mohd Irfan - Full Stack Developer</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700" rel="stylesheet">
+    <meta name="description" content="Professional portfolio of Mohd Irfan, showcasing skills, projects, and experiences.">
+    <title>Mohd Irfan | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-
-        header {
-            background-color: #333;
-            padding: 20px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        nav ul li {
-            margin-left: 20px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #28a745;
-        }
-
-        #hero {
-            background: url('/images/hero-bg.jpg') no-repeat center center/cover;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-        }
-
-        #hero h1 {
-            font-size: 4rem;
-            font-weight: 700;
-        }
-
-        #hero p {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-        }
-
-        .cta-button {
-            background-color: #28a745;
-            color: #fff;
-            padding: 15px 30px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background-color: #218838;
-        }
-
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
-
-        section {
-            padding: 60px 0;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            text-align: center;
-            color: #333;
-        }
-
-        #about p {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 1.2rem;
-        }
-
-        .skills-list {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .skills-list li {
-            background-color: #f9f9f9;
-            padding: 20px;
-            margin: 10px;
-            border-radius: 10px;
-            flex: 1;
-            max-width: 30%;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .skills-list li i {
-            margin-right: 10px;
-        }
-
-        .project-slider {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: space-between;
-        }
-
-        .project {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 10px;
-            flex: 1;
-            max-width: 45%;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .project:hover {
-            transform: scale(1.05);
-        }
-
-        .project-image img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-
-        footer {
-            background-color: #333;
-            padding: 20px 0;
-            color: #fff;
-            text-align: center;
-        }
-
-        .social-media-icons a {
-            color: #fff;
-            margin: 0 10px;
-            font-size: 1.5rem;
-            transition: color 0.3s ease;
-        }
-
-        .social-media-icons a:hover {
-            color: #28a745;
-        }
-
-        #contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        #contact-form input, 
-        #contact-form textarea {
-            padding: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 100%;
-        }
-
-        #contact-form button {
-            background-color: #28a745;
-            color: #fff;
-            padding: 15px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        #contact-form button:hover {
-            background-color: #218838;
-        }
-    </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Mohd Irfan</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container">
+            <h1>Hello, I'm Mohd Irfan</h1>
+            <p class="professional-title">Web Developer | UI/UX Designer | Data Scientist</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn">Get in Touch</a>
+                <!-- <a href="resume.pdf" class="btn">Download Resume</a> -->
+            </div>
+        </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero">
-            <div class="hero-content">
-                <h1>Mohd Irfan</h1>
-                <p>Experienced Full Stack Developer Specializing in Scalable Web Solutions</p>
-                <a href="#contact" class="cta-button">Contact Me</a>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am Mohd Irfan, a final-year Computer Science and Engineering student at Lovely Professional University. With a strong foundation in Full Stack Web Development and a passion for Software Engineering, I am dedicated to building innovative solutions and eager to apply my skills in real-world professional environments. My expertise spans across both frontend and backend technologies, and I am committed to continuous learning and delivering high-quality projects.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-cards">
+                <div class="card">HTML</div>
+                <div class="card">CSS</div>
+                <div class="card">JavaScript</div>
+                <div class="card">React.js</div>
+                <div class="card">Node.js</div>
+                <div class="card">UI/UX Design</div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- About Section -->
-        <section id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>I am a dedicated Full Stack Developer with over 5 years of experience in designing, developing, and implementing web applications. Skilled in both front-end and back-end technologies, I ensure user-centric, highly responsive web platforms that deliver business objectives.</p>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills">
-            <div class="container">
-                <h2>Core Competencies</h2>
-                <ul class="skills-list">
-                    <li><i class="fas fa-laptop-code"></i> Front-End: HTML5, CSS3, JavaScript, React, Next.js</li>
-                    <li><i class="fas fa-server"></i> Back-End: Node.js, Express, REST APIs</li>
-                    <li><i class="fas fa-database"></i> Databases: MongoDB, MySQL</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <div class="container">
-                <h2>Featured Projects</h2>
-                <div class="project-slider">
-                    <div class="project">
-                        <h3>CertiResumeGenerator</h3>
-                        <div class="project-image">
-                            <img src="images/project-a.jpg" alt="Project A">
-                        </div>
-                        <p>I developed a certificate management website using the MERN stack that allows users to upload and manage their certificates. The platform supports both PDF and image uploads and uses Optical Character Recognition (OCR) to extract text from uploaded certificates for easy access and resume creation. The site features user authentication, a secure file upload system, and a dashboard where users can view, organize, and download their certificates. It includes error handling, PDF-to-image conversion, and responsive design for a seamless user experience.</p>
-                      
-                    </div>
-                    <div class="project">
-                        <h3>JavaCoder - Professional Educational Platform</h3>
-                        <div class="project-image">
-                            <img src="images/project-b.jpg" alt="Project B">
-                        </div>
-                        <p>JavaCoder is a comprehensive educational platform built using Next.js, designed to provide high-quality courses for both school-level students (grades 8-12) and undergraduate students. For school students, JavaCoder offers in-depth lessons in core subjects such as Mathematics, English, Science, and Social Science. For undergraduate students, the platform delivers cutting-edge technical courses, including HTML, CSS, JavaScript, React.js, and Next.js, with a focus on project-based learning.
-
-The platform is designed with a clean and modern interface, providing features like personalized dashboards, dynamic course pages, and interactive learning paths. With future updates planned for expanding its offerings, JavaCoder aims to be a go-to destination for students looking to enhance their academic and technical skills.</p>
-                      
-                    </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-gallery">
+                <div class="project">
+                    <img src="assets/images/project1.png" alt="Project 1">
+                    <h3>CertiResumeGenerator</h3>
+                    <p>I developed a certificate management website using the MERN stack that allows users to upload and manage their certificates. The platform supports both PDF and image uploads and uses Optical Character Recognition (OCR) to extract text from uploaded certificates for easy access and resume creation. The site features user authentication, a secure file upload system, and a dashboard where users can view, organize, and download their certificates.</p>
+                    <a href="https://github.com/project1" class="btn">View on GitHub</a>
+                </div>
+                <div class="project">
+                    <img src="assets/images/project2.png" alt="Project 2">
+                    <h3>JavaCoder - Professional Educational Platform</h3>
+                    <p>JavaCoder is a comprehensive educational platform built using Next.js, designed to provide high-quality courses for both school-level students and undergraduate students. The platform delivers cutting-edge technical courses, including HTML, CSS, JavaScript, React.js, and Next.js, with a focus on project-based learning.</p>
+                    <a href="https://github.com/project2" class="btn">View on GitHub</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="container">
-                <h2>Get in Touch</h2>
-                <p>I am always open to discussing new projects or opportunities. Reach out using the form below or via email.</p>
-                <form id="contact-form">
-                    <input type="text" id="name" placeholder="Your Name" required>
-                    <input type="email" id="email" placeholder="Your Email" required>
-                    <textarea id="message" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="submit-button">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
 
+    <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Mohd Irfan. All Rights Reserved.</p>
-            <div class="social-media-icons">
-                <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/CoderIrfann"><i class="fab fa-github"></i></a>
-            </div>
+            <p>© 2024 Mohd Irfan. All Rights Reserved.</p>
+            <ul class="social-icons">
+                <li><a href="https://www.linkedin.com/in/mohd-irfan-78544b280/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/CoderIrfann" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
         </div>
     </footer>
 
