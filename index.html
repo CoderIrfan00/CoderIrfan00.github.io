@@ -1,150 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio of Mohd Irfan, showcasing skills, projects, and experiences.">
-    <title>Mohd Irfan | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
-
-<body>
-    <!-- Navbar Section -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#home" class="logo">Mohd Irfan</a>
-            <div class="menu-toggle" id="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Professional portfolio of Coder Irfan - Web Developer and Computer Science Student" />
+    <title>Coder Irfan | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/framer-motion@6"></script>
+  </head>
+  <body class="bg-gradient-to-br from-gray-900 to-gray-800 text-white font-sans">
+    <header class="bg-gray-900 p-4 sticky top-0 z-10">
+      <nav class="container mx-auto flex justify-between items-center">
+        <div class="motion-safe:animate-fadeInLeft">
+          <a href="/" class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+            Coder Irfan
+          </a>
         </div>
-    </nav>
+        <div class="hidden md:flex space-x-4">
+          <a href="#about" class="hover:text-blue-400 transition-colors motion-safe:animate-bounce">About</a>
+          <a href="#projects" class="hover:text-blue-400 transition-colors motion-safe:animate-bounce">Projects</a>
+          <a href="#contact" class="hover:text-blue-400 transition-colors motion-safe:animate-bounce">Contact</a>
+          <a href="https://youtube.com/@coder_with_irfan?si=myz4YxctaaA7RPdJ" class="hover:text-blue-400 transition-colors motion-safe:animate-bounce">Youtube</a>
 
-    <!-- Hero Section -->
-    <header id="home" class="hero">
-        <div class="container">
-            <h1>Hello, I'm Mohd Irfan</h1>
-            <p class="professional-title">Full Stack Web Developer | UI/UX Designer</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn">Get in Touch</a>
-            </div>
         </div>
+      </nav>
     </header>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am Mohd Irfan, a final-year Computer Science and Engineering student at Lovely Professional University. With a strong foundation in Full Stack Web Development and a passion for Software Engineering, I am dedicated to building innovative solutions and eager to apply my skills in real-world professional environments. My expertise spans across both frontend and backend technologies, and I am committed to continuous learning and delivering high-quality projects.</p>
+    <section id="about" class="container mx-auto px-4 py-16">
+      <div class="motion-safe:animate-fadeIn">
+        <h2 class="text-4xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+          About Me
+        </h2>
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="md:w-1/2 mb-8 md:mb-0 motion-safe:animate-fadeInLeft">
+            <img src="irfannnn.jpg" alt="Coder Irfan" class="rounded-full shadow-lg w-full max-w-sm" />
+          </div>
+          <div class="md:w-1/2 text-lg motion-safe:animate-fadeInRight">
+            <p class="mb-4">
+              Hello! I'm Coder Irfan, a passionate web developer and computer science student.
+            </p>
+            <p class="mb-4">
+              I specialize in creating modern, responsive web applications using cutting-edge technologies.
+            </p>
+            <p>When I'm not coding, you can find me exploring new technologies or contributing to open-source projects.</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skill-cards">
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <div class="card-title">HTML</div>
-                    <div class="card-description">Expert in HTML5, building responsive layouts.</div>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <div class="card-title">CSS</div>
-                    <div class="card-description">Skilled in CSS3, creating modern designs.</div>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <div class="card-title">JavaScript</div>
-                    <div class="card-description">Proficient in JavaScript, enhancing user interactivity.</div>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    <div class="card-title">React.js</div>
-                    <div class="card-description">Experience in building single-page applications with React.</div>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fab fa-node-js"></i>
-                    </div>
-                    <div class="card-title">Node.js</div>
-                    <div class="card-description">Backend development with Node.js and Express.</div>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <div class="card-title">UI/UX Design</div>
-                    <div class="card-description">Creating user-centered designs for enhanced usability.</div>
-                </div>
+    <section id="youtube" class="bg-gray-900 py-12">
+        <div class="max-w-6xl mx-auto text-center">
+          <h2 class="text-4xl font-bold text-white mb-8">YouTube Videos</h2>
+          <div class="relative overflow-hidden aspect-video rounded-lg shadow-lg">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/9xMicbOw_Wc?si=O-3_Jgv60TKqodlU"
+              title="YouTube videos"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+    <section id="projects" class="container mx-auto px-4 py-16">
+      <h2 class="text-4xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 motion-safe:animate-fadeIn">
+        My Projects
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg motion-safe:animate-fadeInUp">
+          <img src="https://th.bing.com/th/id/OIP.ZVdjT86vcoz-86XUuSLpvAHaEK?rs=1&pid=ImgDetMain" alt="Project Image" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">E-Learning Platform</h3>
+            <p class="text-gray-400 mb-4">A Full stack Learning Project</p>
+            <div class="flex justify-between">
+              <a href="https://github.com/CoderIrfann/E-Learning-Platform.git" class="text-blue-400 hover:text-blue-300 transition-colors" target="_blank">GitHub</a>
+              <a href="https://javacoderhub.netlify.app/" class="text-blue-400 hover:text-blue-300 transition-colors" target="_blank">Live</a>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-gallery">
-                <div class="project">
-                    <!-- <img src="assets/images/project1.png" alt="Project 1"> -->
-                    <h3>CertiResumeGenerator</h3>
-                    <p>I developed a certificate management website using the MERN stack that allows users to upload and manage their certificates. The platform supports both PDF and image uploads and uses Optical Character Recognition (OCR) to extract text from uploaded certificates for easy access and resume creation. The site features user authentication, a secure file upload system, and a dashboard where users can view, organize, and download their certificates.</p>
-                    <!-- <a href="https://github.com/project1" class="btn">View on GitHub</a> -->
-                </div>
-                <div class="project">
-                    <!-- <img src="assets/images/project2.png" alt="Project 2"> -->
-                    <h3>JavaCoder - Professional Educational Platform</h3>
-                    <p>JavaCoder is a comprehensive educational platform built using Next.js, designed to provide high-quality courses for both school-level students and undergraduate students. The platform delivers cutting-edge technical courses, including HTML, CSS, JavaScript, React.js, and Next.js, with a focus on project-based learning.</p>
-                    <!-- <a href="https://github.com/project2" class="btn">View on GitHub</a> -->
-                </div>
-            </div>
-        </div>
+    <section id="contact" class="container mx-auto px-4 py-16">
+      <h2 class="text-4xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 motion-safe:animate-fadeIn">
+        Get in Touch
+      </h2>
+      <div class="flex justify-center space-x-8">
+        <a href="https://github.com/CoderIrfann" class="text-white hover:text-blue-400 transition-colors motion-safe:animate-pulse" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/mohd-irfan-78544b280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-white hover:text-blue-400 transition-colors motion-safe:animate-pulse" target="_blank">LinkedIn</a>
+        <a href="/email.html" class="text-white hover:text-blue-400 transition-colors motion-safe:animate-pulse">Email</a>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form action="#" method="POST">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <div class="container">
-            <p>© 2024 Mohd Irfan. All Rights Reserved.</p>
-            <ul class="social-icons">
-                <li><a href="https://www.linkedin.com/in/mohd-irfan-78544b280/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/CoderIrfann" target="_blank"><i class="fab fa-github"></i></a></li>
-            </ul>
-        </div>
+    <footer class="bg-gray-900 py-8 motion-safe:animate-fadeInUp">
+      <div class="container mx-auto text-center text-gray-400">
+        <p>&copy; 2024 Coder Irfan. All rights reserved.</p>
+      </div>
     </footer>
-
-    <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
